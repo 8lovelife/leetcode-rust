@@ -5,4 +5,4 @@ pub use self::length_of_longest_sub_string::length_longest_sub_string;
 mod two_sum;
 mod add_two_numbers;
 mod length_of_longest_sub_string;
-
+mod median_of_two_sorted_array;
