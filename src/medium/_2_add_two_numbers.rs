@@ -1,3 +1,5 @@
+use crate::ListNode;
+
 pub fn add_two_numbers(
     l1: Option<Box<ListNode>>,
     l2: Option<Box<ListNode>>,
@@ -33,24 +35,11 @@ pub fn add_two_numbers(
     return dummy_head.unwrap().next;
 }
 
-#[derive(PartialEq, Eq, Clone, Debug)]
-pub struct ListNode {
-    pub val: i32,
-    pub next: Option<Box<ListNode>>,
-}
-impl ListNode {
-    fn new(val:i32) -> Self{
-        ListNode {
-            val,
-            next:None,
-        }
-    }
-}
-
 #[cfg(test)]
 mod tests {
+    use crate::ListNode;
+
     use super::add_two_numbers;
-    use super::ListNode;
 
     #[test]
     fn test_add_two_numbers() {
